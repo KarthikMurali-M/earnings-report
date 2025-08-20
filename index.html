@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Quarterly Earnings Report  24f2001293@ds.study.iitm.ac.in </title>
+    <title>Quarterly Earnings Report | 24f2001293@ds.study.iitm.ac.in</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- RevealJS core -->
@@ -16,11 +16,27 @@
     <div class="reveal">
       <div class="slides">
         
-        <!-- Title Slide -->
+        <!-- Title Slide with dynamic email + date -->
         <section>
           <h2>Quarterly Earnings Report</h2>
           <p>Presented by Technical Consultant</p>
-          <p><small>Email: <strong>24f2001293@ds.study.iitm.ac.in</strong></small></p>
+
+          <script>
+            const email = "24f2001293@ds.study.iitm.ac.in";
+            document.write('<p><small>Email: <strong>' + email + '</strong></small></p>');
+          </script>
+          <noscript>
+            <p><small>Email: your_email@ds.study.iitm.ac.in</small></p>
+          </noscript>
+
+          <script>
+            const today = new Date();
+            document.write('<p><small>Generated on: ' + today.toDateString() + '</small></p>');
+          </script>
+          <noscript>
+            <p><small>Generated on: (static date)</small></p>
+          </noscript>
+
           <aside class="notes">
             Welcome stakeholders. This session will walk through key financial metrics and projections.
           </aside>
@@ -77,15 +93,18 @@ print(quarterly)
         <!-- Math Equations -->
         <section>
           <h3>Financial Formula</h3>
-          <p>
-            Earnings Per Share (EPS):
-          </p>
+          <p>Earnings Per Share (EPS):</p>
           <p>
             \[
               EPS = \frac{Net\ Income - Dividends}{Average\ Outstanding\ Shares}
             \]
           </p>
-          <p>Your email (24f2001293@ds.study.iitm.ac.in) in the presentation</p>
+          <script>
+            document.write('<p><small>Prepared by: ' + email + '</small></p>');
+          </script>
+          <noscript>
+            <p><small>Prepared by: your_email@ds.study.iitm.ac.in</small></p>
+          </noscript>
           <aside class="notes">
             EPS is one of the most important investor metrics, showing profitability per share.
           </aside>
@@ -95,6 +114,12 @@ print(quarterly)
         <section>
           <h3>Thank You</h3>
           <p>Questions?</p>
+          <script>
+            document.write('<p>Contact: <em>' + email + '</em></p>');
+          </script>
+          <noscript>
+            <p>Contact: your_email@ds.study.iitm.ac.in</p>
+          </noscript>
           <aside class="notes">
             Invite questions and highlight next steps.
           </aside>
