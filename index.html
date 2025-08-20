@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Quarterly Earnings Report</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- RevealJS core -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme">
+
+    <!-- Syntax highlighting -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css">
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        
+        <!-- Title Slide -->
+        <section>
+          <h2>Quarterly Earnings Report</h2>
+          <p>Presented by Technical Consultant</p>
+          <p><small>Email: <strong>24f2001293@ds.study.iitm.ac.in</strong></small></p>
+          <aside class="notes">
+            Welcome stakeholders. This session will walk through key financial metrics and projections.
+          </aside>
+        </section>
+
+        <!-- Markdown Slide -->
+        <section data-markdown>
+          <textarea data-template>
+# Financial Highlights (Q2)
+
+- **Revenue Growth:** 15% 📈
+- **Net Profit:** $2.3B
+- **EPS:** $1.42
+- **Customer Acquisition:** +120K new clients
+
+Notes:
+- Stress growth consistency.
+- Compare YoY trends.
+          </textarea>
+        </section>
+
+        <!-- Fragmented Bullet Points -->
+        <section>
+          <h3>Key Drivers of Performance</h3>
+          <ul>
+            <li class="fragment">Digital Transformation Initiatives</li>
+            <li class="fragment">Operational Efficiency Gains</li>
+            <li class="fragment">Global Market Expansion</li>
+          </ul>
+          <aside class="notes">
+            Reveal points gradually to keep engagement.
+          </aside>
+        </section>
+
+        <!-- Code Sample -->
+        <section>
+          <h3>Data Processing Pipeline</h3>
+          <pre><code class="language-python">
+import pandas as pd
+
+# Load quarterly transactions
+df = pd.read_csv("transactions.csv")
+
+# Aggregate revenue by quarter
+quarterly = df.groupby("quarter")["revenue"].sum()
+
+print(quarterly)
+          </code></pre>
+          <aside class="notes">
+            Demonstrates the analytics process used for preparing financial insights.
+          </aside>
+        </section>
+
+        <!-- Math Equations -->
+        <section>
+          <h3>Financial Formula</h3>
+          <p>
+            Earnings Per Share (EPS):
+          </p>
+          <p>
+            \[
+              EPS = \frac{Net\ Income - Dividends}{Average\ Outstanding\ Shares}
+            \]
+          </p>
+          <aside class="notes">
+            EPS is one of the most important investor metrics, showing profitability per share.
+          </aside>
+        </section>
+
+        <!-- Closing -->
+        <section>
+          <h3>Thank You</h3>
+          <p>Questions?</p>
+          <aside class="notes">
+            Invite questions and highlight next steps.
+          </aside>
+        </section>
+
+      </div>
+    </div>
+
+    <!-- RevealJS Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/math/math.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true, // enables ?v=1 cache busting
+        plugins: [ RevealMarkdown, RevealHighlight, RevealMath.KaTeX ]
+      });
+    </script>
+  </body>
+</html>
